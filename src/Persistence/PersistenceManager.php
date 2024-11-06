@@ -76,7 +76,11 @@ final class PersistenceManager
     }
 
     /**
-     * @param callable():mixed $callback
+     * @template T
+     *
+     * @param callable():T $callback
+     *
+     * @return T
      */
     public function flushAfter(callable $callback): mixed
     {

@@ -149,7 +149,11 @@ function delete(object $object): object
 }
 
 /**
- * @param callable():mixed $callback
+ * @template T
+ *
+ * @param callable():T $callback
+ *
+ * @return T
  */
 function flush_after(callable $callback): mixed
 {
